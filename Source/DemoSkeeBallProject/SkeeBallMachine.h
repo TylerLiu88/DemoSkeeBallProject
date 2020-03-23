@@ -22,6 +22,8 @@ public:
 	//Pointer to the Static Mesh
 	UStaticMeshComponent* m_pStaticMeshComponent;
 
+	//C++ Macro to allow use of Blueprints
+	UFUNCTION(BlueprintCallable)
 	//Add score function
 	void AddToScore(int points);
 	
