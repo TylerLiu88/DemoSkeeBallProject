@@ -22,7 +22,8 @@ public:
 	//Pointer to the Static Mesh
 	UStaticMeshComponent* m_pStaticMeshComponent;
 
-
+	//Add score function
+	void AddToScore(int points);
 	
 	
 };
