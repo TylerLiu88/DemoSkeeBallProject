@@ -21,7 +21,12 @@ private:
 public:
 
 	void BeginPlay() override;
+
+	//C++ Macro to allow use of Blueprints
+	UFUNCTION(BlueprintCallable)
 	int GetScore();
+
+	UFUNCTION(BlueprintCallable)
 	void SetScore(int newScore);
 	
 	
