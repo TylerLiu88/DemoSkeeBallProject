@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "VRBase/AWorldButton/AWorldButton.h"
+#include "Components/StaticMeshComponent.h"
 #include "SpawnBallButton.generated.h"
 
 /**
@@ -17,7 +18,13 @@ class DEMOSKEEBALLPROJECT_API ASpawnBallButton : public AWorldButton
 public:
 
 	
+	ASpawnBallButton();
+	//Static mesh component 
+	UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* m_pSpawnLocationMesh;
+
 	
+	void OnPressed_Implementation(ABaseController* pController) override;
 	
 
 
