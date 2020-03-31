@@ -11,7 +11,7 @@ ASkeeBall::ASkeeBall() {
 	RootComponent = m_pPickupMeshComponent;
 
 	//Find mesh
-	UStaticMesh* mesh = FindMesh("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere'");
+	UStaticMesh* mesh = FindMesh("StaticMesh'/Game/Meshes/SkeeBall.SkeeBall'");
 	//Set Mesh
 	m_pPickupMeshComponent->SetStaticMesh(mesh);
 

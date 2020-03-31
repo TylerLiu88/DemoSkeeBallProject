@@ -19,6 +19,9 @@ public:
 	
 	ASkeeBallMachine();
 
+	virtual void DefaultThink() override;
+	bool m_bHasPlayerWon;
+
 	//Pointer to the Static Mesh
 	UStaticMeshComponent* m_pStaticMeshComponent;
 

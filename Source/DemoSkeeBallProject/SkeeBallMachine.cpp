@@ -22,7 +22,8 @@ ASkeeBallMachine::ASkeeBallMachine() {
 	FVector scale = FVector(scaleFactor);
 	m_pStaticMeshComponent->SetWorldScale3D(scale);
 
-
+	//Set to false 
+	m_bHasPlayerWon = false;
 
 
 }
@@ -41,9 +42,20 @@ void ASkeeBallMachine::AddToScore(int points) {
 		//Add Score (Current Score and points passed in)
 		mode->SetScore(currScore + points);
 
-
+		//The player wins
+		//If get score is equal to or greater than win condition
+		m_bHasPlayerWon = (mode->GetScore() >= mode->m_iWinScore);
 	}
 
+
+
+}
+
+void ASkeeBallMachine::DefaultThink() {
+
+	if (m_bHasPlayerWon) {
+		Msg("You won!");
+	}
 
 
 }

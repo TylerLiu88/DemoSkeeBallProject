@@ -17,10 +17,16 @@ class DEMOSKEEBALLPROJECT_API ADemoSkeeBallProjectGameModeBase : public AGameMod
 private:
 	//Represents the players score
 	int m_iScore;
+	
 
 public:
 
+	ADemoSkeeBallProjectGameModeBase();
+
 	void BeginPlay() override;
+
+	//Score to win
+	int m_iWinScore;
 
 	//C++ Macro to allow use of Blueprints
 	UFUNCTION(BlueprintCallable)
