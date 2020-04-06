@@ -20,6 +20,7 @@ public:
 	ASkeeBallMachine();
 
 	virtual void DefaultThink() override;
+	
 	bool m_bHasPlayerWon;
 
 	//Pointer to the Static Mesh
@@ -27,7 +28,6 @@ public:
 
 	//C++ Macro to allow use of Blueprints
 	UFUNCTION(BlueprintCallable)
-	//Add score function
 	void AddToScore(int points);
 	
 	

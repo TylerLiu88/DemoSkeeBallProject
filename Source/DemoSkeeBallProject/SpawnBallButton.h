@@ -19,14 +19,16 @@ public:
 
 	
 	ASpawnBallButton();
+
 	//Static mesh component 
 	UPROPERTY(EditAnywhere)
 	UStaticMeshComponent* m_pSpawnLocationMesh;
 
 	
-	void OnPressed_Implementation(ABaseController* pController) override;
+	virtual void OnPressed_Implementation(ABaseController* pController) override;
 	
-
+	//SkeeBall Index for tracking
+	int m_iSkeeBallsIndex;
 
 
 	

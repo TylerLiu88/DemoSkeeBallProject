@@ -27,6 +27,9 @@ public:
 
 	//Score to win
 	int m_iWinScore;
+	
+	//SkeeBall Object Pool
+	TArray<EHANDLE> m_aESkeeBalls;
 
 	//C++ Macro to allow use of Blueprints
 	UFUNCTION(BlueprintCallable)

@@ -2,6 +2,7 @@
 
 #include "SkeeBallMachine.h"
 #include "DemoSkeeBallProjectGameModeBase.h"
+#include "System/NLogger.h"
 
 ASkeeBallMachine::ASkeeBallMachine() {
 

@@ -11,14 +11,14 @@ ASkeeBall::ASkeeBall() {
 	RootComponent = m_pPickupMeshComponent;
 
 	//Find mesh
-	UStaticMesh* mesh = FindMesh("StaticMesh'/Game/Meshes/SkeeBall.SkeeBall'");
+	UStaticMesh* mesh = FindMesh("StaticMesh'/Game/Meshes/SkeeBall'");
 	//Set Mesh
 	m_pPickupMeshComponent->SetStaticMesh(mesh);
 
 	//Scale the Skeeball
-	float scaleFactor = 0.2f;
-	FVector scale = FVector(scaleFactor);
-	m_pPickupMeshComponent->SetWorldScale3D(scale);
+	//float scaleFactor = 0.2f;
+	//FVector scale = FVector(scaleFactor);
+	//m_pPickupMeshComponent->SetWorldScale3D(scale);
 
 }
 
