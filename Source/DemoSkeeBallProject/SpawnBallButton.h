@@ -19,6 +19,9 @@ public:
 
 	
 	ASpawnBallButton();
+	
+	//SkeeBall Index for tracking
+	int m_iSkeeBallsIndex;
 
 	//Static mesh component 
 	UPROPERTY(EditAnywhere)
@@ -27,9 +30,7 @@ public:
 	
 	virtual void OnPressed_Implementation(ABaseController* pController) override;
 	
-	//SkeeBall Index for tracking
-	int m_iSkeeBallsIndex;
-
+	
 
 	
 };

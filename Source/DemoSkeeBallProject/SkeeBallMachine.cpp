@@ -19,7 +19,7 @@ ASkeeBallMachine::ASkeeBallMachine() {
 	m_pStaticMeshComponent->SetStaticMesh(mesh);
 
 	//Scale SkeeBallMachine
-	float scaleFactor = 1.5f;
+	float scaleFactor = 1.5f; 
 	FVector scale = FVector(scaleFactor);
 	m_pStaticMeshComponent->SetWorldScale3D(scale);
 
