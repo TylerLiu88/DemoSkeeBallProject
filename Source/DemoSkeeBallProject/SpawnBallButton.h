@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "VRBase/AWorldButton/AWorldButton.h"
 #include "Components/StaticMeshComponent.h"
+#include "SkeeBall.h"
+#include "DemoSkeeBallProjectGameModeBase.h"
 #include "SpawnBallButton.generated.h"
 
 /**
@@ -30,7 +32,8 @@ public:
 	
 	virtual void OnPressed_Implementation(ABaseController* pController) override;
 	
-	
+	ASkeeBall* skeeball;
+	ADemoSkeeBallProjectGameModeBase* gameMode;
 
 	
 };
