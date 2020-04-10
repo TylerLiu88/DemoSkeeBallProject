@@ -9,4 +9,4 @@ In this Demo Project I will be focusing on several topics, which include:
 6. Actor Spawning
 7. Public Properties
 8. Endgame
-9. Cleanup
+9. Cleanup - Object Pools
